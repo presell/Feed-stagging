@@ -68,6 +68,7 @@ export type PlasmicBlog__OverridesType = {
   root?: p.Flex<"div">;
   pageBanner?: p.Flex<"div">;
   h1?: p.Flex<"h1">;
+  blog?: p.Flex<"div">;
   footerTop?: p.Flex<"div">;
   container?: p.Flex<"div">;
   footerBottom?: p.Flex<"div">;
@@ -460,7 +461,11 @@ function PlasmicBlog__RenderFunc(props: {
               </div>
             </div>
 
-            <div className={classNames(projectcss.all, sty.freeBox__mScBj)}>
+            <div
+              data-plasmic-name={"blog"}
+              data-plasmic-override={overrides.blog}
+              className={classNames(projectcss.all, sty.blog)}
+            >
               <div className={classNames(projectcss.all, sty.freeBox__ptIjZ)}>
                 <p.Stack
                   as={"div"}
@@ -1669,6 +1674,7 @@ const PlasmicDescendants = {
     "root",
     "pageBanner",
     "h1",
+    "blog",
     "footerTop",
     "container",
     "footerBottom",
@@ -1676,6 +1682,7 @@ const PlasmicDescendants = {
   ],
   pageBanner: ["pageBanner", "h1"],
   h1: ["h1"],
+  blog: ["blog"],
   footerTop: ["footerTop", "container"],
   container: ["container"],
   footerBottom: ["footerBottom", "container2"],
@@ -1688,6 +1695,7 @@ type NodeDefaultElementType = {
   root: "div";
   pageBanner: "div";
   h1: "h1";
+  blog: "div";
   footerTop: "div";
   container: "div";
   footerBottom: "div";
@@ -1757,6 +1765,7 @@ export const PlasmicBlog = Object.assign(
     // Helper components rendering sub-elements
     pageBanner: makeNodeComponent("pageBanner"),
     h1: makeNodeComponent("h1"),
+    blog: makeNodeComponent("blog"),
     footerTop: makeNodeComponent("footerTop"),
     container: makeNodeComponent("container"),
     footerBottom: makeNodeComponent("footerBottom"),

@@ -850,7 +850,7 @@
     object-fit: cover;
   }
 }
-.freeBox__mScBj {
+.blog {
   display: flex;
   position: relative;
   flex-direction: column;
