@@ -54,32 +54,6 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
-        },
-        {
-          "id": "LnxsDw2kQk",
-          "name": "About",
-          "type": "managed",
-          "projectId": "mz4dsyGLPzghMRkxgaXEd2",
-          "renderModuleFilePath": "plasmic/feed_stagging/PlasmicAbout.tsx",
-          "importSpec": {
-            "modulePath": "About.tsx"
-          },
-          "cssFilePath": "plasmic/feed_stagging/PlasmicAbout.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "MFdmDxL0Dd",
-          "name": "Blog",
-          "type": "managed",
-          "projectId": "mz4dsyGLPzghMRkxgaXEd2",
-          "renderModuleFilePath": "plasmic/feed_stagging/PlasmicBlog.tsx",
-          "importSpec": {
-            "modulePath": "Blog.tsx"
-          },
-          "cssFilePath": "plasmic/feed_stagging/PlasmicBlog.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
         }
       ],
       "icons": [

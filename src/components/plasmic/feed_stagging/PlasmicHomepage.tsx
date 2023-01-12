@@ -155,7 +155,6 @@ function PlasmicHomepage__RenderFunc(props: {
               data-plasmic-name={"next"}
               data-plasmic-override={overrides.next}
               className={classNames("__wab_instance", sty.next)}
-              link={`/new-page`}
             >
               <div
                 className={classNames(
