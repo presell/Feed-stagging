@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "files",
@@ -54,6 +54,32 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
+        },
+        {
+          "id": "LnxsDw2kQk",
+          "name": "About",
+          "type": "managed",
+          "projectId": "mz4dsyGLPzghMRkxgaXEd2",
+          "renderModuleFilePath": "plasmic/feed_stagging/PlasmicAbout.tsx",
+          "importSpec": {
+            "modulePath": "About.tsx"
+          },
+          "cssFilePath": "plasmic/feed_stagging/PlasmicAbout.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "MFdmDxL0Dd",
+          "name": "Blog",
+          "type": "managed",
+          "projectId": "mz4dsyGLPzghMRkxgaXEd2",
+          "renderModuleFilePath": "plasmic/feed_stagging/PlasmicBlog.tsx",
+          "importSpec": {
+            "modulePath": "Blog.tsx"
+          },
+          "cssFilePath": "plasmic/feed_stagging/PlasmicBlog.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -66,9 +92,75 @@
           "id": "49L1ckADDfe",
           "name": "IconIcon",
           "moduleFilePath": "plasmic/feed_stagging/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "uVrWMVIBGnw",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/feed_stagging/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "HxxHlvjcbq4",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/feed_stagging/icons/PlasmicIcon__Icon3.tsx"
+        },
+        {
+          "id": "CHUmOn5n15d",
+          "name": "ArrowRightsvgIcon",
+          "moduleFilePath": "plasmic/feed_stagging/icons/PlasmicIcon__ArrowRightsvg.tsx"
         }
       ],
-      "images": [],
+      "images": [
+        {
+          "id": "0zkX8TI3pHc",
+          "name": "image",
+          "filePath": "plasmic/feed_stagging/images/image.jpeg"
+        },
+        {
+          "id": "Pt4Ud0-MLQD",
+          "name": "image 2",
+          "filePath": "plasmic/feed_stagging/images/image2.jpeg"
+        },
+        {
+          "id": "3leCe0StVSO",
+          "name": "image 3",
+          "filePath": "plasmic/feed_stagging/images/image3.jpeg"
+        },
+        {
+          "id": "1kowi5KIIKZ",
+          "name": "image 4",
+          "filePath": "plasmic/feed_stagging/images/image4.jpeg"
+        },
+        {
+          "id": "0usFR9LvvQm",
+          "name": "image 5",
+          "filePath": "plasmic/feed_stagging/images/image5.jpeg"
+        },
+        {
+          "id": "3A2eLZRTgYl",
+          "name": "image 6",
+          "filePath": "plasmic/feed_stagging/images/image6.jpeg"
+        },
+        {
+          "id": "fXiU1BYdNH_",
+          "name": "image 7",
+          "filePath": "plasmic/feed_stagging/images/image7.jpeg"
+        },
+        {
+          "id": "EIefuuW7OEL",
+          "name": "image 8",
+          "filePath": "plasmic/feed_stagging/images/image8.jpeg"
+        },
+        {
+          "id": "UI2TAo0WCKa",
+          "name": "image 9",
+          "filePath": "plasmic/feed_stagging/images/image9.jpeg"
+        },
+        {
+          "id": "BUZfsvAdiYs",
+          "name": "image 10",
+          "filePath": "plasmic/feed_stagging/images/image10.jpeg"
+        }
+      ],
       "indirect": false,
       "globalContextsFilePath": "",
       "codeComponents": [

@@ -58,9 +58,11 @@
   position: relative;
   width: 100%;
   height: auto;
-  max-width: 800px;
+  max-width: 825px;
   padding-left: 3px;
   box-shadow: 0px 4px 16px 0px #dc6e6e33;
+  margin-right: 1px;
+  align-self: auto;
   min-width: 0;
 }
 .next:global(.__wab_instance) {
