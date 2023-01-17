@@ -54,6 +54,32 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
+        },
+        {
+          "id": "97Drvd1zOP",
+          "name": "BlogLanding",
+          "type": "managed",
+          "projectId": "mz4dsyGLPzghMRkxgaXEd2",
+          "renderModuleFilePath": "plasmic/feed_stagging/PlasmicBlogLanding.tsx",
+          "importSpec": {
+            "modulePath": "BlogLanding.tsx"
+          },
+          "cssFilePath": "plasmic/feed_stagging/PlasmicBlogLanding.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "xwMh7GcRf2",
+          "name": "BlogDetails",
+          "type": "managed",
+          "projectId": "mz4dsyGLPzghMRkxgaXEd2",
+          "renderModuleFilePath": "plasmic/feed_stagging/PlasmicBlogDetails.tsx",
+          "importSpec": {
+            "modulePath": "BlogDetails.tsx"
+          },
+          "cssFilePath": "plasmic/feed_stagging/PlasmicBlogDetails.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -149,6 +175,30 @@
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         }
       ]
+    },
+    {
+      "projectId": "YUiM7yqBWAqsh8KSnrdj7",
+      "projectApiToken": "yLKpJOE8mD6HqoNCSWF3Em8ut0LBzL7qb3QPqNeOLPjQsSBSc12yhYovnSRSekzgt1xjjbugBGDjOMLGMK4w",
+      "projectName": "plasmic-query",
+      "version": "0.9.0",
+      "cssFilePath": "plasmic/plasmic_query/plasmic_plasmic_query.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "ae7V86eNoXA",
+          "name": "DataFetcher",
+          "componentImportPath": "@plasmicpkgs/plasmic-query"
+        },
+        {
+          "id": "0DrxdjD45dkx",
+          "name": "GraphqlFetcher",
+          "componentImportPath": "@plasmicpkgs/plasmic-query"
+        }
+      ]
     }
   ],
   "globalVariants": {
@@ -162,6 +212,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.192",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.192/dist/plasmic.schema.json"
+  "cliVersion": "0.1.194",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.194/dist/plasmic.schema.json"
 }

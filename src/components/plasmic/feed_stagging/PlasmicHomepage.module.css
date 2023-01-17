@@ -65,18 +65,21 @@
   align-self: auto;
   min-width: 0;
 }
-.next:global(.__wab_instance) {
-  max-width: 100%;
+.link {
   position: relative;
-  margin-left: 0px;
-  width: 158px;
+  align-self: auto;
   margin-top: calc(0px + 16px) !important;
   margin-bottom: 0px;
+  margin-left: 0px;
+  display: flex;
+}
+.next:global(.__wab_instance) {
+  max-width: 100%;
+  width: 158px;
   height: 61px;
-  align-self: auto;
   flex-shrink: 0;
 }
-.svg__teXuc {
+.svg__fiu3G {
   position: relative;
   object-fit: cover;
   width: 1em;
@@ -85,7 +88,7 @@
 .text__zz4Y {
   color: #ededec;
 }
-.svg___2RqdO {
+.svg__eiIl {
   position: relative;
   object-fit: cover;
   width: 1em;

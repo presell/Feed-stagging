@@ -54,6 +54,7 @@ export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   section?: p.Flex<"section">;
   h1?: p.Flex<"h1">;
+  link?: p.Flex<"a">;
   next?: p.Flex<typeof Button>;
 };
 
@@ -146,26 +147,33 @@ function PlasmicHomepage__RenderFunc(props: {
                 )}
               >
                 {
-                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\n"
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum \n\n"
                 }
               </div>
             ) : null}
 
-            <Button
-              data-plasmic-name={"next"}
-              data-plasmic-override={overrides.next}
-              className={classNames("__wab_instance", sty.next)}
+            <a
+              data-plasmic-name={"link"}
+              data-plasmic-override={overrides.link}
+              className={classNames(projectcss.all, projectcss.a, sty.link)}
             >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__zz4Y
-                )}
+              <Button
+                data-plasmic-name={"next"}
+                data-plasmic-override={overrides.next}
+                className={classNames("__wab_instance", sty.next)}
+                link={`/blog`}
               >
-                {"Next"}
-              </div>
-            </Button>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__zz4Y
+                  )}
+                >
+                  {"show blog"}
+                </div>
+              </Button>
+            </a>
           </p.Stack>
         </div>
       </div>
@@ -174,9 +182,10 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "h1", "next"],
-  section: ["section", "h1", "next"],
+  root: ["root", "section", "h1", "link", "next"],
+  section: ["section", "h1", "link", "next"],
   h1: ["h1"],
+  link: ["link", "next"],
   next: ["next"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -186,6 +195,7 @@ type NodeDefaultElementType = {
   root: "div";
   section: "section";
   h1: "h1";
+  link: "a";
   next: typeof Button;
 };
 
@@ -252,6 +262,7 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
     h1: makeNodeComponent("h1"),
+    link: makeNodeComponent("link"),
     next: makeNodeComponent("next"),
 
     // Metadata about props expected for PlasmicHomepage
