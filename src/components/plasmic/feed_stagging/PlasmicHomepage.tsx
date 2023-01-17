@@ -54,7 +54,6 @@ export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   section?: p.Flex<"section">;
   h1?: p.Flex<"h1">;
-  link?: p.Flex<"a">;
   next?: p.Flex<typeof Button>;
 };
 
@@ -153,9 +152,23 @@ function PlasmicHomepage__RenderFunc(props: {
             ) : null}
 
             <a
-              data-plasmic-name={"link"}
-              data-plasmic-override={overrides.link}
-              className={classNames(projectcss.all, projectcss.a, sty.link)}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link__dw7I
+              )}
+              href={`/blog`}
+            >
+              {"Some link text"}
+            </a>
+
+            <a
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__isFj
+              )}
             >
               <Button
                 data-plasmic-name={"next"}
@@ -182,10 +195,9 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "h1", "link", "next"],
-  section: ["section", "h1", "link", "next"],
+  root: ["root", "section", "h1", "next"],
+  section: ["section", "h1", "next"],
   h1: ["h1"],
-  link: ["link", "next"],
   next: ["next"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -195,7 +207,6 @@ type NodeDefaultElementType = {
   root: "div";
   section: "section";
   h1: "h1";
-  link: "a";
   next: typeof Button;
 };
 
@@ -262,7 +273,6 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
     h1: makeNodeComponent("h1"),
-    link: makeNodeComponent("link"),
     next: makeNodeComponent("next"),
 
     // Metadata about props expected for PlasmicHomepage

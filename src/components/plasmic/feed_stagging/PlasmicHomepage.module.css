@@ -65,7 +65,10 @@
   align-self: auto;
   min-width: 0;
 }
-.link {
+.link__dw7I {
+  position: relative;
+}
+.link__isFj {
   position: relative;
   align-self: auto;
   margin-top: calc(0px + 16px) !important;
